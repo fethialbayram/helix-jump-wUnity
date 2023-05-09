@@ -450,6 +450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8176ecb8cc684148aa175564194e4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 340140466}
+  offset: {x: 0, y: 0, z: 0}
+  smoothSpeed: 0.04
 --- !u!1 &1639664365
 GameObject:
   m_ObjectHideFlags: 0
