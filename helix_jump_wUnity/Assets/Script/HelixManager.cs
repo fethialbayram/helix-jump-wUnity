@@ -43,6 +43,7 @@ public class HelixManager : MonoBehaviour
 
         GameObject newRing = Instantiate(rings[index], new Vector3(transform.position.x, yPos, transform.position.z), Quaternion.identity);
         yPos -= ringDistance;
+        newRing.transform.parent = transform;
     }
 
 }
