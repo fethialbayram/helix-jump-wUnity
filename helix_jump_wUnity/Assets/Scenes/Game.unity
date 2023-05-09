@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 340140464}
   - component: {fileID: 340140463}
   - component: {fileID: 340140467}
+  - component: {fileID: 340140468}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -237,6 +238,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 1
+--- !u!114 &340140468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340140462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3a3762669083b4aa22c29a65d24cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 600
 --- !u!1 &1151077670
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +331,7 @@ GameObject:
   - component: {fileID: 1281106797}
   - component: {fileID: 1281106796}
   - component: {fileID: 1281106799}
+  - component: {fileID: 1281106800}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -423,6 +438,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1281106800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281106795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8176ecb8cc684148aa175564194e4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1639664365
 GameObject:
   m_ObjectHideFlags: 0
