@@ -11,11 +11,38 @@ public class HelixManager : MonoBehaviour
     public float ringDistance = 5f;
     float yPos;
 
+    public void Start()
+    {
+        for(int i = 0; i < noOfRings; i++)
+        {
+
+            if (i == 0)
+            {
+                //spawn the first ring
+
+                SpawnRings(0);
+
+            }
+            else
+            {
+
+                //spawn the middle rings except the 0, the last one
+                SpawnRings(Random.Range(1, rings.Length - 1)); 
+
+            }
+
+        }
+
+        //spawn last ring
+
+        SpawnRings(rings.Length - 1);
+    }
+
     void SpawnRings(int index)
     {
 
-        GameObject newRing = (rings[index],new Vec (transform.position))
-
+        GameObject newRing = Instantiate(rings[index], new Vector3(transform.position.x, yPos, transform.position.z), Quaternion.identity);
+        yPos -= ringDistance;
     }
 
 }
