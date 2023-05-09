@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class HelixManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject[] rings;
+
+    public int noOfRings = 10;
+    public float ringDistance = 5f;
+    float yPos;
+
+    void SpawnRings(int index)
     {
-        
+
+        GameObject newRing = (rings[index],new Vec (transform.position))
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
