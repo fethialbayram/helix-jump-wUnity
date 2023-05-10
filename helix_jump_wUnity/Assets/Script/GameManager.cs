@@ -11,6 +11,14 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject levelWinPanel;
 
+
+    private void Start()
+    {
+        Time.timeScale = 1f;
+        gameOver = false;
+        levelWin = false;
+    }
+
     private void Update()
     {
 
