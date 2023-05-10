@@ -20,6 +20,9 @@ public class Ring : MonoBehaviour
 
         if (transform.position.y > player.position.y + 0.1f)
         {
+
+            GameManager.noOfPassingrings++;
+
             for (int i = 0; i < childRings.Length; i++)
             {
                 childRings[i].GetComponent<Rigidbody>().isKinematic = false;
