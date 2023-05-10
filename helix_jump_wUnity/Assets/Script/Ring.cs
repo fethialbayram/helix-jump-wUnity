@@ -18,7 +18,7 @@ public class Ring : MonoBehaviour
     private void Update()
     {
 
-        if (transform.position.y > player.position.y + 0.1f)
+        if (transform.position.y > player.position.y)
         {
 
             GameManager.noOfPassingrings++;
@@ -44,6 +44,8 @@ public class Ring : MonoBehaviour
 
                 }
 
+
+                childRings[i].GetComponent<MeshCollider>().enabled = false;
                 childRings[i].transform.parent = null;
                 Destroy(childRings[i].gameObject, 2f);
                 Destroy(this.gameObject, 5f);
