@@ -18,7 +18,7 @@ public class Ring : MonoBehaviour
     private void Update()
     {
 
-        if (transform.position.y > player.position.y)
+        if (transform.position.y > player.position.y + 0.1f)
         {
             for (int i = 0; i < childRings.Length; i++)
             {
