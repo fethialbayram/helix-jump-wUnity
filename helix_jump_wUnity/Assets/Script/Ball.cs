@@ -17,6 +17,7 @@ public class Ball : MonoBehaviour
     { 
         rb.velocity = new Vector3(rb.velocity.x, bounceForce * Time.deltaTime, rb.velocity.z);
         GameObject newsplit = Instantiate(splitPrefab, new Vector3 (transform.position.x, other.transform.position.y + 0.19f, transform.position.z),transform.rotation);
+        newsplit.transform.localScale = Vector3.one * Random.Range(0.7f, 1.3f);
         newsplit.transform.parent = other.transform;
     }
 }
