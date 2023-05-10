@@ -32,13 +32,13 @@ public class Ball : MonoBehaviour
         if (materialName == "Unsafe (Instance)")
         {
 
-            Debug.Log("GAME OVER");
+            GameManager.gameOver = true;
 
         }
         if (materialName == "LastRing (Instance)")
         {
 
-            Debug.Log("YOU WIN");
+            GameManager.levelWin = true;
 
         }
 
